@@ -8,7 +8,7 @@ var path = require('path');
 
 
 // Load css js files
-app.use("/bower_components",express.static("bower_components"));
+app.use("/resources",express.static("resources"));
 
 app.get('/', function(req, res){
 	res.sendfile('index.html');
